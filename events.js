@@ -19,14 +19,11 @@ function addSectionListeners() {
 }
 
 function changeButtonSize() {
-    let sectionTags = document.getElementsByTagName("button");
+    let buttons = document.getElementsByTagName("button");
 
 
-    for (let i = 0; i < sectionTags.length; i++){
-        sectionTags[i].addEventListener('click', function(){
-            document.getElementById("output-target").innerHTML = `You clicked on the ${this.innerHTML} section`;
-        });
-        
+    for (let i = 0; i < buttons.length; i++){
+            buttons[i].style.display = "block";   
     }
 }
 
